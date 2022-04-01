@@ -15,11 +15,36 @@
     <link rel="stylesheet" href="./static/css/responsive.css">
   </head>
   <body>
-    <header id="header-id" class="header">
-      <div class="header-container wrapper">
-        <figure class="logo">
-          <img src="./static/icons/Logo.svg" alt="Logo Vipacio" >
-        </figure>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-container">
+          <a href="#">
+            <figure class="header-logo">
+              <img src="static/icons/Logo.svg" alt="Logo Bolt|Agro">
+            </figure>
+          </a>
+          <button id="menu-icon-open" class="open-menu">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 15H26.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.75 7.5H26.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.75 22.5H26.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <nav id="menu" class="header-menu">
+            <button id="menu-icon-close" class="close-menu">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 7.5L7.5 22.5" stroke="#F75E01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.5 7.5L22.5 22.5" stroke="#F75E01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="menu-list">
+              <li><a href="">Inicio</a></li>
+              <li><a href="#about-id">Nosotros</a></li>
+              <li><a href="#services-id">Servicios</a></li>
+              <li><a href="#contact-id">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -73,5 +98,6 @@
       </div>
     </section>
 
+    <script src="./index.js"></script>
   </body>
 </html>

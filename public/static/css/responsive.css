@@ -13,13 +13,46 @@
 }
 
 @media (min-width: 768px) {
-  /* Banner =========== */
+  /* Global Styles =========== */
   .title-h1 {
     font-size: 2.75em;
   }
 
   .title-h2 {
     font-size: 2em;
+  }
+
+  /* Header ============== */
+  .header-container {
+    padding: 15px 0;
+  }
+
+  .header-logo img {
+    width: 140px;
+  }
+
+  .open-menu {
+    display: none;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .header-menu {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    transition: none;
+  }
+
+  .menu-list {
+    grid-auto-flow: column;
+  }
+
+  .menu-list li a {
+    color: var(--white-color);
+    font-weight: 500;
   }
 
   /* Banner =========== */
@@ -49,6 +82,11 @@
 
   .title-h2 {
     font-size: 2.75em;
+  }
+
+  /* Header =========== */
+  .menu-list {
+    gap: 50px;
   }
 
   /* Banner =========== */
