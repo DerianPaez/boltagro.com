@@ -237,12 +237,14 @@ button {
   display: grid;
   grid-template-columns: max-content max-content;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   text-align: left;
   padding: 3.5px 14px;
   background: var(--gradiant-color);
   color: var(--white-color);
   cursor: pointer;
+  transition: .3s;
 }
 
 .accordion-button .text {
@@ -271,6 +273,11 @@ button {
   max-height: max-content;
   padding: 3.5px 10px;
   animation: fade-down .3s ease-in-out;
+}
+
+.accordion-button.active svg {
+  transition: .3s;
+  transform: rotate(180deg);
 }
 
 .about-video video {

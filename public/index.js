@@ -25,14 +25,19 @@ accordionItems.forEach(item => {
   let text = item.querySelector('.answer')
   button.addEventListener('click', () => {
     deactiveAccordionItem()
-    text.classList.toggle('active')
+    text.classList.add('active')
+    button.classList.add('active')
   })
 })
 
 function deactiveAccordionItem() {
-  accordionItems.forEach(itemText => {
-    let tagText = itemText.querySelector('.answer')
+  accordionItems.forEach(item => {
+    let tagText = item.querySelector('.answer')
+    let button = item.querySelector('button')
     tagText.classList.remove('active')
+    button.classList.remove('active')
   })
+
+
 }
 
