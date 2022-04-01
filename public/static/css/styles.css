@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #F75E01;
+  --green-color: #05FF00;
+  --black-color: #000000;
+  --white-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Styles =========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial;
+  font-size: 16px;
+}
+
+*::-webkit-scrollbar {
+  width: 13px;     /* Tamaño del scroll en vertical */
+  height: 13px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+*::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+*::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+main, section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.title-h1 {
+  font-size: 1.8em;
+}
+
+.title-h2 {
+  font-size: 1.6em;
+}
+
+.title-h3 {
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 0 5%;
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  grid-template-columns: inherit;
+  grid-template-rows: inherit;
+  grid-template-areas: inherit;
+  gap: inherit;
+}
+
+body {
+  height: 100vh;
+}
+
+/* Header =========== */
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  background-color: transparent;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+}
+
+.logo img{
+  width: 100%;
+}
+
+/* Banner =========== */
+.banner {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  background: linear-gradient(to right, #00000075 , #00000075), url(../images/Banner.jpg);
+  background-size: cover;
+}
+
+.banner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.banner-content h1 {
+  color: var(--white-color);
+}
+
+.banner-content h1 span{
+  color: var(--primary-color);
+  font-size: inherit;
+}
+
+.banner-content p {
+  color: var(--white-color);
+}
+
+.banner-image {
+  justify-self: center;
+}
+
+.banner-image img {
+  width: 100%;
+}
