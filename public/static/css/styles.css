@@ -304,6 +304,15 @@ button {
   width: 100%;
 }
 
+.product-image-container img {
+  animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
 .product-content {
   display: grid;
   gap: 5px;
@@ -343,4 +352,10 @@ button {
   width: 145px;
   height: 45px;
   justify-self: center;
+  cursor: pointer;
+  transition: .5s cubic-bezier(1,-0.72, 0.23, 2.13);
+}
+
+.product-button:hover {
+  transform: scale(1.05);
 }
