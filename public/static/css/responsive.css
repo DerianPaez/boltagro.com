@@ -72,21 +72,36 @@
 
   /* Products =========== */
   .product-container {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: "productImg productContent";
+  }
+
+  .product-container.product-area {
+    grid-template-areas: "productContent productImg";
   }
 
   .product-content {
     text-align: right;
   }
 
+  .product-content.product-content-left {
+    text-align: left;
+  }
+
   .spain-container {
     justify-content: flex-end;
+  }
+
+  .spain-container.spain-container-left {
+    justify-content: left;
   }
 
   .product-button {
     justify-self: right;
   }
-
+  
+  .product-button.product-button-left {
+    justify-self: left;
+  }
   /* Contact =========== */
   .contact-container {
     grid-template-columns: .8fr 1fr;
@@ -136,6 +151,10 @@
   /* Products =========== */
   .product-container {
     grid-template-columns: 1.5fr 2fr;
+  }
+
+  .product-container.product-area {
+    grid-template-columns: 2fr 1.5fr;
   }
 
   .spain-container span {

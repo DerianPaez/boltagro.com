@@ -316,16 +316,22 @@ input, textarea {
 }
 
 /* Products =========== */
+.products {
+  padding: 0;
+}
+
 .product-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  padding: 60px 0;
 }
 
 .product-image-container {
   display: grid;
   justify-content: center;
   align-items: center;
+  grid-area: productImg;
 }
 
 .product-image-container img, .spain-flag img {
@@ -346,6 +352,7 @@ input, textarea {
   display: grid;
   gap: 5px;
   text-align: center;
+  grid-area: productContent;
 }
 
 .spain-container {
