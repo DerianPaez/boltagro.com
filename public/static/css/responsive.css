@@ -169,6 +169,11 @@
     font-size: 1.05em;
   }
 
+  /* Products =========== */
+  .contact-container {
+    gap: 70px;
+  }
+
   /* Footer =========== */
   .footer-container {
     grid-template-columns: max-content max-content;
