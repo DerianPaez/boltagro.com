@@ -87,7 +87,7 @@
     justify-self: right;
   }
 
-  /* Products =========== */
+  /* Contact =========== */
   .contact-container {
     grid-template-columns: .8fr 1fr;
   }
@@ -144,5 +144,11 @@
 
   .product-description p, b {
     font-size: 1.05em;
+  }
+
+  /* Footer =========== */
+  .footer-container {
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
   }
 }
