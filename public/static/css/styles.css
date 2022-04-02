@@ -397,6 +397,12 @@ input, textarea {
 }
 
 .contact-container-right {
+  display: flex;
+  align-self: flex-end;
+}
+
+.contact-form {
+  width: 100%;
   display: grid;
   gap: 20px;
 }

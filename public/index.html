@@ -159,12 +159,14 @@
               </article>
             </div>
           </div>
-          <form class="contact-container-right">
-            <input class="contact-input" type="text" name="Name" placeholder="Nombres">
-            <input class="contact-input" type="text" name="Email" placeholder="Correo Electrónico">
-            <textarea class="contact-textarea" name="Message" placeholder="Mensaje"></textarea>
-            <button class="button-default" type="submit">Enviar</button>
-          </form>
+          <div class="contact-container-right">
+            <form id="contact-form-id" class="contact-form" action="https://formspree.io/f/mayvdajk" method="POST">
+              <input class="contact-input" type="text" name="Name" placeholder="Nombres">
+              <input class="contact-input" type="text" name="Email" placeholder="Correo Electrónico">
+              <textarea class="contact-textarea" name="Message" placeholder="Mensaje"></textarea>
+              <button class="button-default" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
