@@ -65,6 +65,7 @@ button {
 
 .title-h1 {
   font-size: 1.8em;
+  font-weight: 600;
 }
 
 .title-h2 {
@@ -178,7 +179,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .banner-content h1 {
@@ -220,7 +221,6 @@ button {
 }
 
 .about .about-content p {
-  font-size: 1.25em;
   color: var(--paragraph-color);
 }
 
@@ -229,25 +229,55 @@ button {
   gap: 15px;
 }
 
+.accordion-item {
+  transition: .3s;
+}
+
 .accordion-item .accordion-button {
   display: grid;
   grid-template-columns: max-content max-content;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   text-align: left;
   padding: 3.5px 14px;
   background: var(--gradiant-color);
   color: var(--white-color);
+  cursor: pointer;
+  transition: .3s;
 }
 
 .accordion-button .text {
-  font-size: 1.375em;
+  font-size: 1.25em;
   font-weight: 500;
   color: var(--white-color);
 }
 
 .accordion-item .answer {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.answer.active {
+  max-height: max-content;
+  padding: 3.5px 10px;
+  animation: fade-down .3s ease-in-out;
+}
+
+.accordion-button.active svg {
+  transition: .3s;
+  transform: rotate(180deg);
 }
 
 .about-video video {

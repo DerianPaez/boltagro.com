@@ -1,4 +1,4 @@
-@media (max-height: 550px) {
+@media (max-height: 495px) {
   .banner {
     height: 100%;
   }
@@ -108,9 +108,7 @@
   }
 
   /* Banner =========== */
-  .banner-content p {
-    font-size: 20px;
-  }
+
 
   /* About =========== */
   .about-content {
