@@ -69,12 +69,12 @@ button {
 
 .title-h2 {
   font-size: 1.6em;
+  color: var(--black-color);
 }
 
 .title-h3 {
-  font-size: 1em;
-  letter-spacing: 2px;
-  font-weight: 700;
+  font-size: 1.2em;
+  color: var(--primary-color);
 }
 
 .wrapper {
@@ -94,7 +94,7 @@ button {
   grid-template-columns: max-content max-content;
   justify-content: space-between;
   align-items: center;
-  padding: 7px 0;
+  padding: 15px 0;
 }
 
 .open-menu {
@@ -112,7 +112,7 @@ button {
 }
 
 .header-logo img {
-  width: 80px;
+  width: 140px;
   display: block;
 }
 
@@ -141,7 +141,7 @@ button {
   justify-content: center;
   align-items: center;
   border: none;
-  top: 10px;
+  top: 20px;
   right: 5%;
 }
 
@@ -160,7 +160,7 @@ button {
 }
 
 .menu-list li a:hover {
-  color: var(--gray-color);
+  color: var(--primary-color);
 }
 
 /* Banner =========== */
@@ -256,4 +256,61 @@ button {
   object-fit: cover;
 }
 
+/* Products =========== */
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
 
+.product-image-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-container img, .spain-flag img {
+  display: block;
+  width: 100%;
+}
+
+.product-content {
+  display: grid;
+  gap: 5px;
+  text-align: center;
+}
+
+.spain-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.spain-container span {
+  color: var(--black-color);
+  font-weight: 600;
+}
+
+.spain-flag {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-description p {
+  color: var(--paragraph-color);
+}
+
+.product-description b {
+  font-weight: 600;
+}
+
+.product-button {
+  background: linear-gradient(90deg, #F75E01 0%, #C90000 100%);
+  color: var(--white-color);
+  border-radius: 50px;
+  width: 145px;
+  height: 45px;
+  justify-self: center;
+}
