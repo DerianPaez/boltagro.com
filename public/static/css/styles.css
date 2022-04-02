@@ -322,7 +322,9 @@ input, textarea {
 
 .product-container {
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
+  grid-template-areas: "productImg"
+                       "productContent";
   gap: 30px;
   padding: 60px 0;
 }
