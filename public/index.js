@@ -81,6 +81,6 @@ Array.from(productButton).forEach(button => {
 $modal.addEventListener('click', (e) => {
   if(e.target === $modal) $modal.classList.remove('open-modal')
   $modal.querySelector('video').pause()
-  document.querySelector('body').style.overflow = "scroll"
+  document.querySelector('body').style.overflowY = "scroll"
 })
 
