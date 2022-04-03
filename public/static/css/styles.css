@@ -515,3 +515,17 @@ input, textarea {
   list-style: disc;
   color: var(--gray-color);
 }
+
+/* ArrowTop =========== */
+.arrow-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

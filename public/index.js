@@ -63,4 +63,3 @@ async function handleSubmit(event) {
     alert('¡Hubo un problema al enviar el formulario!')
   }
 }
-
