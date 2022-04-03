@@ -7,6 +7,7 @@
     <meta name="description" content="Página web en construcción, Proximamente se podra observar más información.">
     <meta name="author" content="Vipacio">
     <title>Bolt Agro</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./static/icons/Favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +66,7 @@
             <h1 class="title-h1">Página Web Oficial De <span>Bolt Agro</span></h1>
             <p>Productos importados y distribuidos en Ecuador por Herracol S.A.</p>
           </div>
-          <figure class="banner-image">
+          <figure data-aos="zoom-out-left" class="banner-image">
             <img src="./static/images/BannerImage.png" alt="Productos bolt">
           </figure>
         </div>
@@ -75,7 +76,7 @@
     <section id="about-id" class="about">
       <div class="wrapper">
         <div class="about-container">
-          <div class="about-content">
+          <div data-aos="fade-down-right" class="about-content">
             <h2 class="title-h2">Más Acerca De Nosotros</h2>
             <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna. Aenean dictum odio dapibus turpis dapibus vestibulum.</p>
 
@@ -105,7 +106,7 @@
             </div>
           </div>
 
-          <div class="about-video">
+          <div data-aos="fade-down-left" class="about-video">
             <video src="./static/videos/AboutVideo.mp4" controls loop muted></video>
           </div>
         </div>
@@ -115,10 +116,10 @@
     <section id="product-id" class="products">
       <div class="wrapper">
         <article class="product-container">
-          <figure class="product-image-container">
+          <figure data-aos="fade-down-right" class="product-image-container">
             <img src="./static/images/fumigadoraManual.png" alt="Imagen Fumigadora Manual">
           </figure>
-          <div class="product-content">
+          <div data-aos="fade-down-left" class="product-content">
             <div class="spain-container">
               <span>Diseño Español</span>
               <figure class="spain-flag">
@@ -139,10 +140,10 @@
         </article>
 
         <article class="product-container product-area">
-          <figure class="product-image-container">
+          <figure data-aos="fade-down-left" class="product-image-container">
             <img src="./static/images/neblinadora5.5Hp.png" alt="Imagen Fumigadora Manual">
           </figure>
-          <div class="product-content product-content-left">
+          <div data-aos="fade-down-right" class="product-content product-content-left">
             <div class="spain-container spain-container-left">
               <span>Diseño Español</span>
               <figure class="spain-flag">
@@ -171,10 +172,10 @@
         </article>
 
         <article class="product-container">
-          <figure class="product-image-container">
+          <figure data-aos="fade-down-right" class="product-image-container">
             <img src="./static/images/neblinadora3.0Hp.png" alt="Imagen Fumigadora Manual">
           </figure>
-          <div class="product-content">
+          <div data-aos="fade-down-left" class="product-content">
             <div class="spain-container">
               <span>Diseño Español</span>
               <figure class="spain-flag">
@@ -202,10 +203,10 @@
         </article>
 
         <article class="product-container product-area">
-          <figure class="product-image-container">
+          <figure data-aos="fade-down-left" class="product-image-container">
             <img src="./static/images/desbrozadora.png" alt="Imagen Fumigadora Manual">
           </figure>
-          <div class="product-content product-content-left">
+          <div data-aos="fade-down-right" class="product-content product-content-left">
             <div class="spain-container spain-container-left">
               <span>Diseño Español</span>
               <figure class="spain-flag">
@@ -241,7 +242,7 @@
     <section id="contact-id" class="contact">
       <div class="wrapper">
         <div class="contact-container">
-          <div class="contact-container-left">
+          <div data-aos="fade-down-right" class="contact-container-left">
             <h2 class="title-h2">Comunicate Con Nosotros</h2>
             <div class="contact-info">
               <article class="contact-info-item">
@@ -260,7 +261,7 @@
               </article>
             </div>
           </div>
-          <div class="contact-container-right">
+          <div data-aos="fade-down-left" class="contact-container-right">
             <form id="contact-form-id" class="contact-form" action="https://formspree.io/f/mayvdajk" method="POST">
               <input class="contact-input" type="text" name="Name" placeholder="Nombres">
               <input class="contact-input" type="text" name="Email" placeholder="Correo Electrónico">
@@ -287,6 +288,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
     <script src="./buttonScrollTop.js"></script>
   </body>
