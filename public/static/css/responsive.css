@@ -117,7 +117,7 @@
 
   /* Contact =========== */
   .contact-container {
-    grid-template-columns: .8fr 1fr;
+    grid-template-columns: .85fr 1fr;
   }
 
   .contact-container-right {
