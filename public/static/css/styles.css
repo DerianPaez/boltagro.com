@@ -391,6 +391,36 @@ input, textarea {
   justify-self: center;
 }
 
+/* Modal =========== */
+.modal {
+  background-color: rgb(0 0 0 / 43%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+  /* transform: scaleX(30%); */
+}
+
+.open-modal {
+  opacity: 1;
+  visibility: visible;
+  /* transform: scale(1); */
+}
+
+.modal-video {
+  width: 90%;
+}
+
 /* Contact =========== */
 .contact-container {
   display: grid;

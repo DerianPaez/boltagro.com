@@ -12,6 +12,13 @@
   }
 }
 
+@media (min-width: 425px) {
+  /* Modal =========== */
+  .modal-video {
+    width: 65%;
+  }
+}
+
 @media (min-width: 768px) {
   /* Global Styles =========== */
   .title-h1 {
@@ -102,6 +109,12 @@
   .product-button.product-button-left {
     justify-self: left;
   }
+
+  /* Modal =========== */
+  .modal-video {
+    width: 50%;
+  }
+
   /* Contact =========== */
   .contact-container {
     grid-template-columns: .8fr 1fr;
@@ -172,6 +185,11 @@
   /* Products =========== */
   .contact-container {
     gap: 70px;
+  }
+
+  /* Modal =========== */
+  .modal-video {
+    width: 35%;
   }
 
   /* Footer =========== */

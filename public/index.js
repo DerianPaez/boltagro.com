@@ -63,3 +63,22 @@ async function handleSubmit(event) {
     alert('¡Hubo un problema al enviar el formulario!')
   }
 }
+
+const $modal = document.getElementById('modal-id')
+const productButton = document.getElementsByClassName('product-button')
+
+Array.from(productButton).forEach(button => {
+  button.addEventListener('click', (e) => {
+    let linkVideo = button.getAttribute('data-video')
+    $modal.querySelector('video').setAttribute('src', linkVideo)
+    $modal.classList.toggle('open-modal')
+    document.querySelector('body').style.overflow = "hidden"
+  })
+})
+
+$modal.addEventListener('click', (e) => {
+  if(e.target === $modal) $modal.classList.remove('open-modal')
+  $modal.querySelector('video').pause()
+  document.querySelector('body').style.overflow = "scroll"
+})
+
