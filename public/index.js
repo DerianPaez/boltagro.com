@@ -70,7 +70,7 @@ const $modal = document.getElementById('modal-id')
 const productButton = document.getElementsByClassName('product-button')
 
 Array.from(productButton).forEach(button => {
-  button.addEventListener('click', (e) => {
+  button.addEventListener('click', () => {
     let linkVideo = button.getAttribute('data-video')
     $modal.querySelector('video').setAttribute('src', linkVideo)
     $modal.classList.toggle('open-modal')
